@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pass-fail</title>
+</head>
+
+<body>
+
+    <script>
+        var a = parseInt(prompt('gujarati marks'));
+        var b = parseInt(prompt('english marks'));
+        var c = parseInt(prompt('science marks'));
+        var d = parseInt(prompt('s.s marks'));
+        var total = a + b + c + d;
+        console.log("total", total);
+        var marks = total * 100 / 400;
+        console.log("percentage", marks);
+        if (marks >= 90) {
+            console.log("A");
+        }
+        else if (marks >= 80) {
+            console.log("B")
+        }
+        else if (marks >= 70) {
+            console.log("C")
+        }
+        else if (marks >= 60) {
+            console.log("D")
+        }
+        else if (marks >= 33) {
+            console.log("E")
+        }
+        else if (marks < 33) {
+            console.log("Fail");
+        }
+        else {
+            console.log("Invalid mark, outside range 0-100");
+        }
+    </script>
+</body>
+
+</html>
